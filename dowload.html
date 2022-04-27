@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Dowload - iMoney App</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <meta http-equiv="refresh" content="4; URL=https://www.facebook.com/toandei/" />
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  *{
+    border: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  h1{
+    font-size: 70px;
+    font-family: 'Lexend', sans-serif;
+  }
+
+</style>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- /End Preloader -->
+
+  <!-- Start Error Area -->
+  <div class="error-area">
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="container">
+          <h1><b>Cảm ơn bạn đã tải xuống!</b></h1>
+          <h4>
+          <script>  function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);        
+            var vars = query.split("&");        
+            for (var i=0;i<vars.length;i++) {               
+               var pair = vars[i].split("=");                
+               if(pair[0] == variable){return pair[1];}        
+               }        
+               return(false); } 
+               var time = 5; 
+               var page = getQueryVariable("https://www.facebook.com/toandei/"); 
+               function countDown(){ time--; 
+               gett("timecount").innerHTML = time; 
+               if(time == -1){ window.location = page; } } 
+               function gett(id){ if(document.getElementById) return document.getElementById(id); 
+               if(document.all) return document.all.id; 
+               if(document.layers) return document.layers.id; 
+               if(window.opera) return window.opera.id; } 
+               function init(){ if(gett('timecount')){ setInterval(countDown, 1000); 
+               gett("timecount").innerHTML = time; } 
+               else{ setTimeout(init, 50); } } document.onload = init(); 
+               $(document).ready(function(){  $('.link-out-btn').click(function()
+               {     window.location = page;  });  
+               $('https://www.facebook.com/toandei/').text(page); }); 
+               </script> <script> function closeWindow() {         
+                 window.open('','_parent','');         window.close();     } 
+          </script> 
+          Ứng dụng sẽ tự động tải xuống sau <span id="timecount"></span> giây!
+        </h4>
+
+          <div class="h1">
+            <div class="button">
+              <a href="dowload/imoneyapp.apk" class="btn">Tải Lại</a>
+              <a href="index.html" class="btn">Về Trang Chủ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Error Area -->
+
+
+ 
+
+
+
+  <!-- ========================= JS here ========================= -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script>
+    window.onload = function () {
+      window.setTimeout(fadeout, 500);
+    }
+
+    function fadeout() {
+      document.querySelector('.preloader').style.opacity = '0';
+      document.querySelector('.preloader').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
